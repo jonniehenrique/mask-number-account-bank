@@ -17,3 +17,5 @@ function loadMaskContaBancaria(contaBancaria) {
 		contaBancaria.val(valSemDigito.slice(0, valSemDigito.length - 1) + '-' + valSemDigito.slice(valSemDigito.length - 1, valSemDigito.length));
 	}
 };
+
+<br><br>
