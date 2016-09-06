@@ -3,8 +3,24 @@
 - Pode ser usada na forma funcional, apenas chamando a função e passando o parâmetro 
 - Pode ser chamda dentro de um event/listener tipo <b> keyup, keydown, focusout </b> passando por parâmetro o próprio elemento
 
-# uso
+# Uso como function global
 <pre>
 loadMaskAccountBank(555898);
 // retorna 55589-9
+</pre>
+
+# Uso dentro de um event/listener
+<pre>
+$(elementContaBancaria).keyup(function() {
+    loadMaskAccountBank(elementContaBancaria);
+});
+
+$(elementContaBancaria).keydown(function() {
+    loadMaskAccountBank(elementContaBancaria);
+});
+
+$(elementContaBancaria).focusout(function() {
+    loadMaskAccountBank(elementContaBancaria);
+});
+
 </pre>
