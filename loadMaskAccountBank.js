@@ -1,3 +1,9 @@
+/**
+ * Retorna objeto passado com o padrão de mascára de conta bancária com dígito
+ * 
+ * @param {element} object
+**/
+
 function loadMaskContaBancaria(contaBancaria) {
 	
 	var valSemDigito = contaBancaria.val().replace(/[^0-9]/g, '');
