@@ -4,7 +4,7 @@
  * @param {element} object
 **/
 
-function loadMaskContaBancaria(contaBancaria) {
+function carregarContaBancaria(contaBancaria) {
 	
 	var valSemDigito = contaBancaria.val().replace(/[^0-9]/g, '');
         
@@ -17,6 +17,3 @@ function loadMaskContaBancaria(contaBancaria) {
 		contaBancaria.val(valSemDigito.slice(0, valSemDigito.length - 1) + '-' + valSemDigito.slice(valSemDigito.length - 1, valSemDigito.length));
 	}
 };
-
-
-
